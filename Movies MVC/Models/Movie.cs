@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using System.Drawing;
 namespace Movies_MVC.Models
 {
     public class Movie
@@ -30,5 +30,6 @@ namespace Movies_MVC.Models
         [StringLength(5)]
         [Required]
         public string Rating { get; set; }
+        public String PictureURL { get; set; }
     }
 }

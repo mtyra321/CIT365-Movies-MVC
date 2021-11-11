@@ -3,7 +3,12 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    body {
+        background-color: aquamarine;
+    }
 
+</style>
 <h1>Index</h1>
 
 <p>
@@ -20,16 +25,15 @@
         <input type="submit" value="Filter" />
     </p>
 </form>
-
-<table class="table">
+    <table class="table" >
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Movies[0].Title)
-            </th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]">@Html.DisplayNameFor(model => model.Movies[0].Title)</a>
+</th>
             <th>
-                @Html.DisplayNameFor(model => model.Movies[0].ReleaseDate)
-            </th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]">@Html.DisplayNameFor(model => model.Movies[0].ReleaseDate) </a>
+</th>
             <th>
                 @Html.DisplayNameFor(model => model.Movies[0].Genre)
             </th>

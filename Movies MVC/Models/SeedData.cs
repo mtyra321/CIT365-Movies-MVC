@@ -23,38 +23,46 @@ namespace Movies_MVC.Models
                 context.Movie.AddRange(
                     new Movie
                     {
-                        Title = "When Harry Met Sally",
-                        ReleaseDate = DateTime.Parse("1989-2-12"),
-                        Genre = "Romantic Comedy",
-                        Rating = "R", 
-                        Price = 7.99M
-                    },
-
-                    new Movie
-                    {
-                        Title = "Ghostbusters ",
-                        ReleaseDate = DateTime.Parse("1984-3-13"),
+                        Title = "Mobsters and Mormons",
+                        ReleaseDate = DateTime.Parse("2005-9-9"),
                         Genre = "Comedy",
-                        Rating = "R",
-                        Price = 8.99M
+                        Rating = "PG", 
+                        Price = 7.99M,
+                        PictureURL = "mobsters_and_mormons.jpg"
+
                     },
 
                     new Movie
                     {
-                        Title = "Ghostbusters 2",
-                        ReleaseDate = DateTime.Parse("1986-2-23"),
+                        Title = "The R.M.",
+                        ReleaseDate = DateTime.Parse("2003-1-31"),
                         Genre = "Comedy",
-                        Rating = "R",
-                        Price = 9.99M
+                        Rating = "PG",
+                        Price = 8.99M,
+                        PictureURL = "the_R_M.jpg"
+
                     },
 
                     new Movie
                     {
-                        Title = "Rio Bravo",
-                        ReleaseDate = DateTime.Parse("1959-4-15"),
-                        Genre = "Western",
-                        Rating = "R",
-                        Price = 3.99M
+                        Title = "The Best Two Years",
+                        ReleaseDate = DateTime.Parse("2004-2-20"),
+                        Genre = "Comedy",
+                        Rating = "PG",
+                        Price = 9.99M,
+                        PictureURL = "the_best_two_years.jpg"
+
+                    },
+
+                    new Movie
+                    {
+                        Title = "The Singles Ward",
+                        ReleaseDate = DateTime.Parse("2002-1-30"),
+                        Genre = "Comedy",
+                        Rating = "PG",
+                        Price = 3.99M,
+                        PictureURL = "the_singles_ward.jpg"
+
                     }
                 );
                 context.SaveChanges();

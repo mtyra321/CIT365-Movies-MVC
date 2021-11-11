@@ -3,10 +3,14 @@
 @{
     ViewData["Title"] = "Create";
 }
-
+<style>
+    body {
+        background-color: aquamarine;
+    }
+</style>
 <h1>Create</h1>
 
-<h4>Movie</h4>
+<h4>Church Movie</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -34,9 +38,25 @@
             </div>
             <div class="form-group">
                 <label asp-for="Rating" class="control-label"></label>
-                <input asp-for="Rating" class="form-control" />
+                <select asp-for="Rating" class="form-control">
+                    <option value="G">G</option>
+                    <option value="PG">PG</option>
+                    <option value="PG-13">PG-13</option>
+                    <option value="R">R</option>
+
+                </select>
                 <span asp-validation-for="Rating" class="text-danger"></span>
             </div>
+            <!--<div>
+                <label for="Image">Image</label>
+                <br />
+                <input type="file" name="Image" />
+                <br />-->
+            
+                @*<label asp-for="Picture" class="control-label"></label>
+                <input asp-for="Picture" type="file" class="form-control" />
+                <span asp-validation-for="Picture" class="text-danger"></span>*@
+            <!--</div>-->
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
